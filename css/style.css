@@ -4,15 +4,46 @@
   --main-title-color: #ffffff;
   --second-title-color: #303030;
   --acsent-color: #ff6c00;
+  --typical-margin: 20px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
 }
 body {
   font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
+}
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link,
 .header-tel {
@@ -42,6 +73,10 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
 }
+.hero-content {
+  background-color: #303030;
+  padding: 272px 96px 206px 96px;
+}
 .hero-top-text {
   font-weight: 600;
   font-size: 11px;
@@ -49,6 +84,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin-bottom: var(--typical-margin);
 }
 .hero-title {
   font-weight: 700;
@@ -56,6 +92,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .hero-bottom-text {
   font-weight: 400;
@@ -63,14 +100,20 @@ body {
   line-height: 1.66;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 400px;
 }
-.aboet-top-text {
+.about {
+  padding-top: 139px;
+  padding-bottom: 121px;
+}
+.about-top-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-title {
   font-weight: 700;
@@ -78,6 +121,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .about-bottom-text {
   font-weight: 400;
@@ -85,6 +129,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: var(--typical-margin);
 }
 .about-text {
   font-weight: 400;
@@ -92,6 +137,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: var(--typical-margin);
 }
 .about-btn,
 .price-btn {
@@ -103,9 +149,18 @@ body {
 }
 .about-btn {
   color: var(--second-btn-color);
+  margin-top: var(--typical-margin);
+}
+.price {
+  background-color: #303030;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .price-btn {
   color: var(--main-btn-color);
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
 }
 .price-text {
   font-weight: 600;
@@ -114,6 +169,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  margin: var(--typical-margin);
 }
 .price-title {
   font-weight: 700;
@@ -121,6 +177,14 @@ body {
   line-height: 1.16;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+.price-list {
+  border: 1px dashed #ffffff;
+  padding: 30px 40px;
+}
+.price-item {
+  margin-bottom: var(--typical-margin);
 }
 .price-item-text {
   font-weight: 400;
@@ -129,6 +193,16 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+.benefits {
+  padding-top: 143px;
+  padding-bottom: 137px;
+}
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+}
 .benefits-item-text {
   font-weight: 700;
   font-size: 42px;
@@ -136,6 +210,7 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  display: block;
 }
 .benefits-text {
   font-weight: 600;
@@ -151,6 +226,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .benefits-title {
   font-weight: 700;
@@ -158,6 +234,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .benefits-botton-text {
   font-weight: 400;
@@ -166,6 +243,10 @@ body {
   letter-spacing: 0.02em;
   color: #555555;
 }
+.team {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
 .team-text {
   font-weight: 600;
   font-size: 11px;
@@ -173,6 +254,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-title-color);
+  margin-bottom: var(--typical-margin);
 }
 .team-title {
   font-weight: 700;
@@ -180,6 +262,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.05em;
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .team-name {
   font-weight: 400;
@@ -188,6 +271,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 .team-name-text {
   font-weight: 400;
